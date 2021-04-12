@@ -72,9 +72,7 @@
 
 
 # DEFAULT ENTRY
-# "Normal" class -> exclude CPUs 1, 2, 3, allow all others.
-Normal:FFFFFFFFFFFFFFF1
+All:FFFFFFFFFFFFFFFF
 
-# "Pinball" class -> enable CPUs 1, 2, 3
-# for all non-pinball system tasks.
-Pinball:000000000000000E
+# All CPUs but 0
+AllBut0:FFFFFFFFFFFFFFFE

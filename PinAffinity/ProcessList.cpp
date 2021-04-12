@@ -2,7 +2,7 @@
 #include <TlHelp32.h>
 #include "ProcessList.h"
 
-bool GetProcessList(std::list<ProcessDesc> &lst)
+bool GetProcessList(std::list<ProcessDesc>& lst)
 {
 	// create a toolhelp process snapshot
 	HandleHolder h = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
